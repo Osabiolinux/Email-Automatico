@@ -1,17 +1,3 @@
-# Automação Web e Busca de Informações com Python
-
-Para isso, vamos criar uma automação web:
-
-- Usaremos o selenium
-- Importante: baixar o webdriver
-
-#######################################################################################################
-
-
-
-
-
-
 from tkinter import E
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
