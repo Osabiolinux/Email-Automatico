@@ -16,7 +16,6 @@ navegador = webdriver.Chrome(options=chrome_options)
 
 # ação 
 id_email =  "teste@gmail.com"
-id_senha = "teste"
 id_contato = "kalilinuxajuda@gmail.com"
 tx_contato = "oi tudo bem to aqui pra lembra que a sua fatura de carta ed credito vencenceu"
 id_texto =  "Testando o bot"
@@ -32,11 +31,10 @@ navegador.find_element(By.XPATH,' //*[@id="identifierId"]').send_keys(id_email)
 # clicando no botao de entrar  
 navegador.find_element(By.XPATH,' //*[@id="identifierNext"]/div/button').send_keys(Keys.ENTER)
 # Botando a senha  
-
 time.sleep(9)
 pyautogui.press('enter')
 pyautogui.pause  = 2.8
-pyautogui.write(id_senha)
+pyautogui.write('sua senha ')
 time.sleep(3)
 #clicar em entrar
 navegador.find_element(By.XPATH,' //*[@id="passwordNext"]/div/button').send_keys(Keys.ENTER)
